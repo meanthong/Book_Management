@@ -13,14 +13,14 @@
                     3/id of the book.
 
                 III/ One of the linked lists stores the books that are AVAILABLE in he library 
-                and the second list stores the books which are ISSUED to students. 
-                    Administrators can issue books from the available books to students. 
-                The issued book gets deleted from the available books list and is added to 
-                the issued books list.
+                and the second list stores the books which are LOANED to students. 
+                    Studemts can loan books from the available books. This book will given by admin. 
+                The loaned book gets deleted from the available books list and is added to 
+                the loaned books list.
 
                 IV/ The Admin can save two lists in file after update Books to Library database.
-                    File Available.bin contains all available books. And Issued contains all
-                    issued Books.
+                    File Available.bin contains all available books. And Loaned.bin contains all
+                    loaned Books.
                 **************************************************************************
 */
 
@@ -250,7 +250,7 @@ void Display(Book *head){
 * Description: Write whole list of Book to a Binary File.
 * Input: 
 	*available - Pointer to Available Book list.
-	*issued - Pointer to Issued Book list
+	*issued - Pointer to Loaned Book list
 * Output: 
 	Return: None.
 */
@@ -385,8 +385,8 @@ Book* Read_Available_List(Book *start){
 }
 
 /*
-* Function name: Read_Issued_List
-* Description: Read all data saved in Issued.bin file.
+* Function name: Read_Loaned_List
+* Description: Read all data saved in Loaned.bin file.
 * Input: 
 	*start - Pointer to the fisrt Node to be read.
 * Output: 
