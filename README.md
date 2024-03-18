@@ -1,5 +1,4 @@
 This is my project to provide an easy way to manage books in a library.
-The project is designed using the C programming language.
 It simulates the process of library's books management, including:
     *Making the process of loaning and returning books very easy for Librarian.
     *Focusing on the administrator and can be only accessed by the administrator to manage the database of the books. 
