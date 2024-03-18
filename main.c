@@ -120,18 +120,6 @@ int main()
                 break;
             }
 
-//            if(choice!=8)
-//            {
-//                printf("\nDo you want to Continue?");
-//                printf("\nEnter 0 for NO");
-//                printf("\nEnter 1 for YES");
-//                printf("\nEnter your Choice : ");
- //               scanf("%d",&menu_check);
-//            }
- //           else
- //           {
- //               menu_check=0;
- //           }
         }
         while(menu_check==1);
     }
